@@ -1,5 +1,4 @@
-import TrainMoving from './modules/TrainMoving.js'
-new TrainMoving;
+
 
 const app = {
     pages: [],
