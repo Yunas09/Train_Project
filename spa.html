@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Single Page Application</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="spa.css">
+    <!--  -->
+</head>
+<body>
+    <main>
+        <div class="page active" id="home">
+            <h1>Home</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="train" class="nav-link">TRAIN</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+
+
+            <input type="button" name="Trains" onclick="getdata()" value="Click"/>
+        <div id="div1"></div>
+        </div>
+        
+        <div class="page" id="train">
+            <h1>Train</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="train" class="nav-link">TRAIN</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+            <div class="bigdiv">
+                <img src="train.png" id='trainPosition' class="train">
+                <img src="kystbanen.png">
+                <button class="start-train">start train</button>
+                <button class="reset-train">reset train</button>
+                <div id='msg'> </div>
+        </div>
+            <div class="Train"></div>
+            
+        
+        </div>
+
+        
+        <div class="page" id="detail">
+            <h1>Detail</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="train" class="nav-link">TRAIN</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+        </div>
+        
+    </main>
+    <script type ="module" src="./modules/TrainMoving.js"></script>
+    <script type ="module" src="./modules/trains.js"></script>
+    <script type ="module" src="spa.js"></script>
+</body>
+</html>

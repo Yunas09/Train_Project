@@ -1,0 +1,33 @@
+let Train = document.querySelector('.Train');
+let moveBy = 10;
+
+
+window.addEventListener('load', () => {
+    Train.style.position = 'absolute';
+    Train.style.left = 0;
+    Train.style.top = 0;
+
+});
+
+
+window.addEventListener('keyup', (e) => {
+      switch (e.key) {
+        case 'ArrowLeft' :
+            Train.style.left = parseInt(Train.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight' :
+            Train.style.left = parseInt(Train.style.left) + moveBy + 'px';
+            break;   
+            
+        case 'ArrowUp' :
+            Train.style.top = parseInt(Train.style.top) - moveBy + 'px';
+            break;   
+        case 'ArrowDown' :
+            Train.style.top = parseInt(Train.style.top) + moveBy + 'px';
+            break;     
+
+        
+
+      }  
+
+});
